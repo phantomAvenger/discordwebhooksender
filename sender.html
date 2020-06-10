@@ -1,24 +1,65 @@
 <!doctype html>
-
 <html>
   <head>
     <title>Discord Webhook Sender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://camo.githubusercontent.com/8322eb97556056b36e18736002b93cd7db2db22d/68747470733a2f2f6d617863646e2e69636f6e73382e636f6d2f53686172652f69636f6e2f4c6f676f732f2f776562686f6f6b313630302e706e67">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="Send a message through a discord webhook!">
+    <meta name="author" content="Discord Webhook Sender">
+    <meta name="keywords" content="discord, webhook, sender, discord webhook, discord sender, webhook sender, discord webhook sender">
+    <meta property="og:image" content="https://camo.githubusercontent.com/8322eb97556056b36e18736002b93cd7db2db22d/68747470733a2f2f6d617863646e2e69636f6e73382e636f6d2f53686172652f69636f6e2f4c6f676f732f2f776562686f6f6b313630302e706e67">
     <style>
-      .webhooksend {
-        height: 100vh;
-        width: 100vw;
+      body {
+        background-color: black;
+        color: white;
+        font-family: 'Lato', sans-serif;
       }
+      h1 {
+        font-size: 100px;
+      }
+      input {
+        margin-bottom: 20px;
+        border: 6px solid white;
+        font-size: 30px;
+        background-color: grey;
+        text-align: center;
+      }
+      #btn {
+	      background-color:#44c767;
+	      border-radius:28px;
+	      border:1px solid #18ab29;
+	      display:inline-block;
+	      cursor:pointer;
+	      color:#ffffff;
+	      font-family:Arial;
+	      font-size:17px;
+	      padding:26px 25vw;
+	      text-decoration:none;
+	      text-shadow:0px 1px 0px #2f6627;
+      }
+      #btn:hover {
+      	background-color:#5cbf2a;
+      }
+      #btn:active {
+      	position:relative;
+      	top:1px;
+      }
+
+        
     </style>
   </head>
   <body>
-    <div id="webhooksend">
-      <input type="text" id="link" style="width: 99vw; height: 100px;" placeholder="Webhook Link"></input><hr>
-      <input type="text" id="username" style="width: 99vw; height: 100px;" placeholder="Webhook Username"></input><hr>
-      <input type="text" id="content" style="width: 99vw; height: 100px;" placeholder="Message Content"></input><hr>
-      <input type="text" id="avatar" style="width: 99vw; height: 100px;" placeholder="Avatar Link"></input><hr>
-      <button id="btn" style="height: 30px;width:99vw; height: 100px;">Send</button>
-    </div>
+    <center>
+      <h1>Discord Webhook Sender</h1>
+      <div id="webhooksend">
+        <input type="text" id="link" style="width: 50vw; height: 60px;" placeholder="Webhook Link"></input><br>
+        <input type="text" id="username" style="width: 50vw; height: 60px;" placeholder="Webhook Username"></input><br>
+        <input type="text" id="content" style="width: 50vw; height: 60px;" placeholder="Message Content"></input><br>
+        <input type="text" id="avatar" style="width: 50vw; height: 60px;" placeholder="Avatar Link"></input><br>
+        <button id="btn">Send</button>
+      </div>
+    </center>
     <script src="main.js"></script>
   </body>
 </html>
